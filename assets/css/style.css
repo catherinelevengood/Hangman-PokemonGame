@@ -1,0 +1,169 @@
+* {
+	margin: 0;
+}
+/* for Sticky footer */
+html {
+	height: 100%;
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	position: relative;
+	min-height: 100%;
+	margin: 0;
+	padding-bottom: 6rem; /* to keep footer from overlapping - see below*/
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	padding: 1rem;
+/*	text-align: center; */
+}
+/* If you know the height of the footer, then you should set it explicitly, and set the bottom padding of the footer’s parent element to be the same value (or larger if you want some spacing).
+This is to prevent the footer from overlapping the content above it, since it is being removed from the document flow with position: absolute;.
+/****  end of section for Sticky footer ****/
+
+
+html body {
+	overflow: auto;
+	max-width: 100%;
+}
+
+p {
+	margin: 0 0 5px;
+}
+/*
+.page-wrap {
+	min-height: 100%;
+	
+	margin-bottom: -40px;/*equal to footer height 
+}
+.page-wrap:after {
+	content: "";
+	display: block;
+}
+.site-footer, .page-wrap:after {
+	height: 40px;/*must be same height as footer 
+}
+.site-footer {
+	text-align: center;
+	overflow: hidden;
+}
+*/
+div.row {
+	margin: 0;
+/*	margin: 20px 0;*/
+/*	border: 2px solid white;*/
+}
+
+.container-fluid {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	clear: both;
+}
+
+.container {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	clear: both;
+}
+
+#playAgain h4 {
+	color: red;
+}
+
+.well {
+	margin-top: 30px;
+	border: 2px solid white;
+}
+
+#playImage, #themeSong {
+	width: 75%;
+}
+
+img {
+	width: 100%;
+}
+figcaption {
+	display: flex;
+	flex-direction: column;
+}
+.audio {
+	display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+img#playImage {
+	transition:all 0.5s;
+
+}
+
+img#playImage:hover {
+  	box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+  	transform: scale(1.1);
+}
+audio:hover, audio:focus, audio:active {
+  	box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+  	transform: scale(1.05);
+}
+.gifImage {
+	width: 100%;
+}
+#silImage:hover {
+  	box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+  	transform: scale(1.25);
+ }
+.hideImg {
+	width: 100%;
+	opacity: 0.01;
+}
+.gifImage:hover {
+	box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+  	transform: scale(1.25);	
+}
+.gameLoc, .lettersLoc {
+	text-align: center;
+}
+footer {	
+	text-align: center;
+	background: #4e5d6c;
+	vertical-align: baseline;
+	clear: both;
+	width: 100%;
+}
+
+.footer-info {
+	font-size: 10px;
+	margin: 0;
+	padding: 10px;
+	line-height: 15px;	
+}
+
+@media only screen and (max-width: 768px) {
+	.secondrow {
+	    width: 100%;
+	    display: flex;
+	    flex-direction: column;
+	}
+	.toprow {
+		width: 100%;
+	}
+	#playImage, #themeSong {
+		width: 100%;
+	}
+	.silImage {
+		width: 100%;
+	}
+}
